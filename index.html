@@ -59,7 +59,7 @@
                     -->
                     <div>
                         <ul>
-                            <li class="list-inline-item"></li><a href="assets/images/cv.pdf"></i>CV</a></li>
+                            <li class="list-inline-item"></li><a href="assets/images/cv.pdf" target="_blank"></i>CV</a></li>
                             <li class="list-inline-item"></li><a href="#projects"></i>Projects</a></li>
                             <li class="list-inline-item"></li><a href="#publications"></i>Publications</a></li>
                             <li class="list-inline-item"></li><a href="#teaching"></i>Teaching</a></li>
@@ -128,7 +128,7 @@
                              <h3 class="heading" style="font-size:18px; color:rgb(0, 130, 130)"><i class="fas fa-gears"></i> Robustness against Adversarial Time-Series</h3>
                              <p>The vulnerability of ML
                                 models against adversarial examples is a well-established threat for safety-critical applications. One way to ensure the reliability of
-                                deployed ML systems in the real world is to understand these attacks. But aside from Images and Text, do we know how time-series data is affected
+                                deployed ML systems in the real world is to understand these attacks. But aside from Images and Text, do we know how time-series data (e.g., sensor acquisition, weather data) is affected
                                 by adversarial examples?
                             </p>
                              <div class="item row">
@@ -137,42 +137,63 @@
                                  <p style="font-size:10px; color:rgb(98, 98, 98)">*Depiction of real-world data affected by noise.</p>
                                  </div>
                                  <div class="desc col-md-8 col-12">
-                                     <p>If the sensor used to collect data is affected by noise, is the commonly used Minkowski metric appropriate to compare the similaity of the signals?
-                                        How does time-series natural perturbation such as time-shifts and frequency-distortion affect the ability of the ML model to classify correctly the input.
-                                        Check-out our recent <a href="https://ojs.aaai.org/index.php/AAAI/article/view/20552" target="_blank" style="font-weight:bold">AAAI</a> articles to find out more about this problem.
-                                        To dive into more detail of this problem, check ...
+                                     <p>If the data collected is affected by noise, is the commonly used Minkowski metric appropriate to compare the similaity of the signals?
+                                        How does time-series natural perturbation such as time-shifts and frequency-distortion affect the ability of the ML model to classify correctly the input?
+                                        <br>
+                                        <b>Related papers: </b><a href="https://ojs.aaai.org/index.php/AAAI/article/view/20552" target="_blank" style="font-weight:bold">RO-TS (AAAI'22)</a> &amp; 
+                                                                <a href="https://arxiv.org/abs/2207.04308" target="_blank" style="font-weight:bold">DTW-AR</a> 
                                      </p>
                                  </div>                       
                              </div><!--//item-->
                              <div class="item row">
-                                 <div class="col-md-4 col-12">
+                                 <div class="col-md-4 col-12" >
                                  <img class="img-fluid project-image" src="assets/images/projects/rotation_watch.gif"  />
                                  <p style="font-size:10px; color:rgb(98, 98, 98)">*Depiction of real-world data affected by sensor rotation.</p>
                                  </div>
                                  <div class="desc col-md-8 col-12">
-                                     <p>In real-world, the sensors is not only affected by additive noise. Its relative position (such as its angular position on the wrist) can also affect the acquired data.
-                                        Such position distortion yields signals that are not similar according to Minkowski metric. Therefore, how can we enhance the robustness of deep models to recognize correctly the distorted inputs.
-                                        Check-out our recent <a href="https://www.jair.org/index.php/jair/article/view/13543" target="_blank" style="font-weight:bold">JAIR</a> and 
-                                        <a href="#" style="font-weight:bold" target="_blank">ICCAD</a> articles to find out more about this problem.
+                                     <p>In real-world, sensors are not only vulnerable to additive noise. For example, the hardware orientation can also affect the acquired data.
+                                        Such position distortion yields signals that are not similar according to Minkowski or elastic metrics. Therefore, how can we enhance the robustness of deep models to recognize correctly the distorted inputs?
+                                        <br>
+                                        <b>Related papers: </b> <a href="https://www.jair.org/index.php/jair/article/view/13543" target="_blank" style="font-weight:bold">TSA-STAT(JAIR'22)</a> &amp; 
+                                        <a href="#" style="font-weight:bold" target="_blank">StatOpt (ICCAD'22)</a> 
                                      </p>
                                  </div>                       
                              </div><!--//item-->
                          </div>
                          
                          <div class="content">    
-                            <h3 class="heading" style="font-size:18px; color:rgb(0, 130, 130)"><i class="fas fa-gears"></i> Out-Of-Distribution (OOD) detection for Safety-critical application</h3>
-                            <p>While deep models are successful in
-                                reaching high accuracy for many challenging tasks, they remain unpredictable on
-                                unseen examples. In many cases where the input originates from unusual events or tail
-                                risks, they can make highly-confident predictions that are completely incorrect.</p>
+                            <div class="item row">
+                                <h3 class="heading" style="font-size:18px; color:rgb(0, 130, 130)"><i class="fas fa-gears"></i> Out-Of-Distribution (OOD) detection for Safety-critical application</h3>
+                                <div class="col-md-4 col-12">
+                                    <img class="img-fluid project-image" src="assets/images/projects/IdOod.jpg"  />
+                                </div>
+                                <div class="desc col-md-8 col-12">
+                                    <p>While deep models are successful in
+                                        reaching high accuracy for many challenging tasks, they remain unpredictable on
+                                        unseen examples. In many cases where the input originates from unusual events or tail
+                                        risks, they can make highly-confident predictions that are completely incorrect.
+                                        <br>
+                                        <b>Related papers: </b> <a href="https://arxiv.org/abs/2207.04306" target="_blank" style="font-weight:bold">SR Score</a>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                         
                          
                         <div class="content">    
-                            <h3 class="heading" style="font-size:18px; color:rgb(0, 130, 130)"><i class="fas fa-gears"></i> Uncertainty quantification for reliable machine-learning</h3>
-                            <p>A reliable ML system is required
-                                to not only make the correct predictions but also quantify the uncertainty in its
-                                predictions.</p>
+                            <div class="item row">
+                                <h3 class="heading" style="font-size:18px; color:rgb(0, 130, 130)"><i class="fas fa-gears"></i> Uncertainty quantification for reliable machine-learning</h3>
+                                <div class="col-md-4 col-12">
+                                    <img class="img-fluid project-image" src="assets/images/projects/CI.png"  />
+                                </div>
+                                <div class="desc col-md-8 col-12">
+                                    <p>Safe deployment of deep neural networks in high-stake real-world applications require 
+                                        theoretically sound uncertainty quantification. We study Conformal prediction for
+                                        uncertainty quantification of deep models to obtain prediction set for 
+                                        classification/forecast where the correct prediction is contained with high probability. 
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                      </div><!--//section-inner-->                
                  </section><!--//Projects-->
@@ -182,7 +203,9 @@
                          <h2 class="heading">Publications</h2>
                          <div class="content">
                              <div class="item">
+                                <!--Journals-->
                                  <h3 class="title" style="font-weight:bold;font-size:16px">Journals</h3>
+
                                  <p style="text-indent:10px;"><i class="fas fa-newspaper" style="font-size:0.7em;"> </i><a href="https://www.jair.org/index.php/jair/article/view/13543" target="_blank"> Adversarial Framework with Certified Robustness for Time-Series Data via Statistical Features
                                  </a><span class="author">T. Belkhouja, J. Doppa. </span><span class="year">Journal of Artificial Intelligence Research (JAIR), 2022.</span></li></p>
  
@@ -195,7 +218,12 @@
                                  <p style="text-indent:10px;"><i class="fas fa-newspaper" style="font-size:0.7em;"> </i><a href="https://www.mdpi.com/2224-2708/7/2/21" target="_blank"> Symmetric Encryption Relying on Chaotic Henon System for Secure Hardware-Friendly Wireless Communication of Implantable Medical Systems.
                                  </a><span class="author">T. Belkhouja, X. Du, A. Mohamed, A.K. Al-Ali, M. Guizani. </span><span class="year">Journal of Sensor and Actuator Networks, 2018.</span></li></p>
                                  
+                                <!--Conference-->
                                  <h3 class="title" style="font-weight:bold;font-size:16px">Conference Papers</h3>
+
+                                 <p style="text-indent:10px;"><i class="fas fa-newspaper" style="font-size:0.7em;"> </i><a href="#"> Reliable Machine Learning for Wearable Activity Monitoring: Novel Algorithms and Theoretical Guarantees.
+                                 </a><span class="author">D. Hussein*, T. Belkhouja*, Y. Yan, and J. Doppa. </span><span class="year">41st International Conference on Computer-Aided Design (ICCAD), 2022.</span><span style="color:rgb(145, 145, 145)"> (* denotes equal contribution) </span></li></p>
+ 
                                  <p style="text-indent:10px;"><i class="fas fa-newspaper" style="font-size:0.7em;"> </i><a href="https://ojs.aaai.org/index.php/AAAI/article/view/20552" target="_blank"> Training Robust Deep Models for Time-Series Domain: Novel Algorithms and Theoretical Analysis.
                                  </a><span class="author">T. Belkhouja, Y. Yan, and J. Doppa. </span><span class="year">36th AAAI Conference on Artificial Intelligence, 2022. </span></li></p>
  
