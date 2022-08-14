@@ -59,11 +59,11 @@
                     -->
                     <div>
                         <ul>
-                            <li class="list-inline-item"></li><a href="assets/images/cv.pdf" target="_blank"></i>CV</a></li>
-                            <li class="list-inline-item"></li><a href="#projects"></i>Projects</a></li>
-                            <li class="list-inline-item"></li><a href="#publications"></i>Publications</a></li>
-                            <li class="list-inline-item"></li><a href="#teaching"></i>Teaching</a></li>
-                            <li class="list-inline-item"></li><a href="#awards"></i>Awards</a></li>
+                            <li class="list-inline-item"></li><a style="color:#003162" href="assets/images/cv.pdf" target="_blank"></i>CV</a></li>
+                            <li class="list-inline-item"></li><a style="color:#003162" href="#projects"></i>Projects</a></li>
+                            <li class="list-inline-item"></li><a style="color:#003162" href="#publications"></i>Publications</a></li>
+                            <li class="list-inline-item"></li><a style="color:#003162" href="#teaching"></i>Teaching</a></li>
+                            <li class="list-inline-item"></li><a style="color:#003162" href="#awards"></i>Awards</a></li>
                         </ul>
                     </div>
                     <div class="d-flex justify-content-end">
@@ -88,7 +88,7 @@
                                 My general research interests are in the field of the robustness of machine learning systems. 
                                 My current research focuses on developing efficient learning and optimization algorithms to improve 
                                 the reliability and safety of deep learning algorithms for diverse settings and data spaces. My current work includes: 
-                                <ul>
+                                <ul style="margin-top:-0.75em">
                                     <li>Robust deep learning for the time-series domain with diverse applications including human activity recognition and mobile health.</li>
                                     <li>Trustworthy machine learning for sequential data  witha  focus on Out-Of-Distribution detection.</li>
                                     <li>Uncertainty quantification for reliable machine-learning using conformal prediction.</li>
@@ -105,11 +105,11 @@
                         <h2 class="heading">Education</h2>
                         <div class="content">
                             <div class="item">                      
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Ph.D Computer Science</h3>
+                                <h3 class="title" style="color:rgb(0, 130, 130)"><i class="fas fa-graduation-cap"></i> Ph.D. Computer Science</h3>
                                 <h4 class="university">Washington State University <span class="year">(2019-)</span></h4>
                             </div><!--//item-->
                             <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> MSc Electrical Engineering</h3>
+                                <h3 class="title" style="color:rgb(0, 130, 130)"><i class="fas fa-graduation-cap"></i> M.Sc. Electrical Engineering</h3>
                                 <h4 class="university">University of Idaho <span class="year">(2017-2019)</span></h4>
                             </div><!--//item-->
                         </div><!--//content-->
@@ -123,13 +123,13 @@
             <div class="secodary-full col-md-12 col-12"><!--//Projects-->
                 <section id="projects" class="latest section">
                      <div class="section-inner shadow-sm rounded">
-                         <h2 class="heading">Projects</h2>
+                         <h2 class="heading">Research Projects</h2>
                          <div class="content">    
-                             <h3 class="heading" style="font-size:18px; color:rgb(0, 130, 130)"><i class="fas fa-gears"></i> Robustness against Adversarial Time-Series</h3>
+                             <h3 class="heading" style="font-size:18px; color:rgb(0, 130, 130);margin-top:25px"><i class="fas fa-gears"></i> Adversarial Robustness against Time-Series Perturbations</h3>
                              <p>The vulnerability of ML
-                                models against adversarial examples is a well-established threat for safety-critical applications. One way to ensure the reliability of
-                                deployed ML systems in the real world is to understand these attacks. But aside from Images and Text, do we know how time-series data (e.g., sensor acquisition, weather data) is affected
-                                by adversarial examples?
+                                models against adversarial perturbations is a well-established threat for safety-critical applications. One way to ensure the reliability of
+                                deployed ML systems in the real world is to understand these perturbations. But aside from Images and Text, do we know how time-series data (e.g., sensor acquisition, weather data) is affected
+                                by adversarial perturbations?
                             </p>
                              <div class="item row">
                                  <div class="col-md-4 col-12">
@@ -137,11 +137,12 @@
                                  <p style="font-size:10px; color:rgb(98, 98, 98)">*Depiction of real-world data affected by noise.</p>
                                  </div>
                                  <div class="desc col-md-8 col-12">
-                                     <p>If the data collected is affected by noise, is the commonly used Minkowski metric appropriate to compare the similaity of the signals?
-                                        How does time-series natural perturbation such as time-shifts and frequency-distortion affect the ability of the ML model to classify correctly the input?
+                                     <p>When the data collected is perturbed, is the commonly used Minkowski metric appropriate to compare the similaity of the signals?
+                                        Time-series natural perturbation such as time-shifts and frequency-distortion affect significantly the ability of the ML model to classify correctly the input. 
+                                        How can we enhance the robustness of these classifiers using adversarial perturbations?
                                         <br>
-                                        <b>Related papers: </b><a href="https://ojs.aaai.org/index.php/AAAI/article/view/20552" target="_blank" style="font-weight:bold">RO-TS (AAAI'22)</a> &amp; 
-                                                                <a href="https://arxiv.org/abs/2207.04308" target="_blank" style="font-weight:bold">DTW-AR</a> 
+                                        <b>Related papers: </b><a href="https://ojs.aaai.org/index.php/AAAI/article/view/20552" target="_blank" >RO-TS (AAAI'22)</a> &amp; 
+                                                                <a href="https://arxiv.org/abs/2207.04308" target="_blank" >DTW-AR</a> 
                                      </p>
                                  </div>                       
                              </div><!--//item-->
@@ -151,11 +152,11 @@
                                  <p style="font-size:10px; color:rgb(98, 98, 98)">*Depiction of real-world data affected by sensor rotation.</p>
                                  </div>
                                  <div class="desc col-md-8 col-12">
-                                     <p>In real-world, sensors are not only vulnerable to additive noise. For example, the hardware orientation can also affect the acquired data.
-                                        Such position distortion yields signals that are not similar according to Minkowski or elastic metrics. Therefore, how can we enhance the robustness of deep models to recognize correctly the distorted inputs?
+                                     <p>Time-series data acquisition is prone to natural perturbation resulting from the hardware orientation or amplified noise.
+                                        Such distortion yields signals that are dissimilar according to Minkowski or elastic metrics. Therefore, how can we enhance the robustness of deep models to recognize correctly the distorted inputs?
                                         <br>
-                                        <b>Related papers: </b> <a href="https://www.jair.org/index.php/jair/article/view/13543" target="_blank" style="font-weight:bold">TSA-STAT(JAIR'22)</a> &amp; 
-                                        <a href="#" style="font-weight:bold" target="_blank">StatOpt (ICCAD'22)</a> 
+                                        <b>Related papers: </b> <a href="https://www.jair.org/index.php/jair/article/view/13543" target="_blank" >TSA-STAT (JAIR'22)</a> &amp; 
+                                        <a href="#" target="_blank">StatOpt (ICCAD'22)</a> 
                                      </p>
                                  </div>                       
                              </div><!--//item-->
@@ -163,7 +164,7 @@
                          
                          <div class="content">    
                             <div class="item row">
-                                <h3 class="heading" style="font-size:18px; color:rgb(0, 130, 130)"><i class="fas fa-gears"></i> Out-Of-Distribution (OOD) detection for Safety-critical application</h3>
+                                <h3 class="heading" style="font-size:18px; color:rgb(0, 130, 130);margin-top:30px"><i class="fas fa-gears"></i> Out-Of-Distribution (OOD) Detection for Safety-Critical Application</h3>
                                 <div class="col-md-4 col-12">
                                     <img class="img-fluid project-image" src="assets/images/projects/IdOod.jpg"  />
                                 </div>
@@ -173,7 +174,7 @@
                                         unseen examples. In many cases where the input originates from unusual events or tail
                                         risks, they can make highly-confident predictions that are completely incorrect.
                                         <br>
-                                        <b>Related papers: </b> <a href="https://arxiv.org/abs/2207.04306" target="_blank" style="font-weight:bold">SR Score</a>
+                                        <b>Related papers: </b> <a href="https://arxiv.org/abs/2207.04306" target="_blank" >SR Score</a>
                                     </p>
                                 </div>
                             </div>
@@ -182,15 +183,15 @@
                          
                         <div class="content">    
                             <div class="item row">
-                                <h3 class="heading" style="font-size:18px; color:rgb(0, 130, 130)"><i class="fas fa-gears"></i> Uncertainty quantification for reliable machine-learning</h3>
+                                <h3 class="heading" style="font-size:18px; color:rgb(0, 130, 130);margin-top:30px"><i class="fas fa-gears"></i> Uncertainty Quantification for Reliable Machine-Learning</h3>
                                 <div class="col-md-4 col-12">
                                     <img class="img-fluid project-image" src="assets/images/projects/CI.png"  />
                                 </div>
                                 <div class="desc col-md-8 col-12">
                                     <p>Safe deployment of deep neural networks in high-stake real-world applications require 
-                                        theoretically sound uncertainty quantification. We study Conformal prediction for
-                                        uncertainty quantification of deep models to obtain prediction set for 
-                                        classification/forecast where the correct prediction is contained with high probability. 
+                                        theoretically sound uncertainty quantification. We study Conformal Prediction for
+                                        uncertainty quantification of deep models to obtain prediction sets for 
+                                        classification/regression where the correct prediction is contained with high probability. 
                                     </p>
                                 </div>
                             </div>
@@ -204,7 +205,7 @@
                          <div class="content">
                              <div class="item">
                                 <!--Journals-->
-                                 <h3 class="title" style="font-weight:bold;font-size:16px">Journals</h3>
+                                 <h3 class="title" style="font-weight:bold;font-size:18px;color:rgb(0, 130, 130);margin-top:30px"><i class="fas fa-paperclip" style="font-size:0.7em;"></i> Journals</h3>
 
                                  <p style="text-indent:10px;"><i class="fas fa-newspaper" style="font-size:0.7em;"> </i><a href="https://www.jair.org/index.php/jair/article/view/13543" target="_blank"> Adversarial Framework with Certified Robustness for Time-Series Data via Statistical Features
                                  </a><span class="author">T. Belkhouja, J. Doppa. </span><span class="year">Journal of Artificial Intelligence Research (JAIR), 2022.</span></li></p>
@@ -219,7 +220,7 @@
                                  </a><span class="author">T. Belkhouja, X. Du, A. Mohamed, A.K. Al-Ali, M. Guizani. </span><span class="year">Journal of Sensor and Actuator Networks, 2018.</span></li></p>
                                  
                                 <!--Conference-->
-                                 <h3 class="title" style="font-weight:bold;font-size:16px">Conference Papers</h3>
+                                 <h3 class="title" style="font-weight:bold;font-size:18px;color:rgb(0, 130, 130);margin-top:30px"><i class="fas fa-paperclip" style="font-size:0.7em;"></i> Conference Papers</h3>
 
                                  <p style="text-indent:10px;"><i class="fas fa-newspaper" style="font-size:0.7em;"> </i><a href="#"> Reliable Machine Learning for Wearable Activity Monitoring: Novel Algorithms and Theoretical Guarantees.
                                  </a><span class="author">D. Hussein*, T. Belkhouja*, Y. Yan, and J. Doppa. </span><span class="year">41st International Conference on Computer-Aided Design (ICCAD), 2022.</span><span style="color:rgb(145, 145, 145)"> (* denotes equal contribution) </span></li></p>
@@ -255,7 +256,7 @@
                         <h2 class="heading">Teaching</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title" style="font-weight:bold;font-size:16px">Teaching Assistant, Washington State University</h3>
+                                <h3 class="title" style="font-weight:bold;font-size:16px;color:rgb(0, 130, 130)">Teaching Assistant, Washington State University</h3>
                                 <h3 class="title" style="text-indent:10px;"><i class="fas fa-school-flag"  style="font-size:0.7em;"></i> CptS 315 -<span class="year"> Introduction to Data Mining</span> <span class="place">Spring 2020 - Spring 2021</span></h3>
                                 <h3 class="title" style="text-indent:10px;"><i class="fas fa-school-flag"  style="font-size:0.7em;"></i> CptS 570 -<span class="year"> Machine Learning</span> <span class="place">Fall 2020</span></h3>
                                 <h3 class="title" style="text-indent:10px;"><i class="fas fa-school-flag"  style="font-size:0.7em;"></i> CptS 223 -<span class="year">  Advanced Data Structures in C++</span> <span class="place">Fall 2020</span></h3>
@@ -263,7 +264,7 @@
                                 <h3 class="title" style="text-indent:10px;"><i class="fas fa-school-flag"  style="font-size:0.7em;"></i> CptS 440/540 -<span class="year"> Introduction to Data Mining</span> <span class="place">Fall 2019</span></h3>
                             </div>
                             <div class="item">
-                                <h3 class="title" style="font-weight:bold;font-size:16px">Teaching Assistant, University of Idaho</h3>
+                                <h3 class="title" style="font-weight:bold;font-size:16px;color:rgb(0, 130, 130)">Teaching Assistant, University of Idaho</h3>
                                 <h3 class="title" style="text-indent:10px;"><i class="fas fa-school-flag"  style="font-size:0.7em;"></i> ECE 241 -<span class="year">Digital Logic Circuit Lab</span> <span class="place">2017-2019</span></h3>
                                 <h3 class="title" style="text-indent:10px;"><i class="fas fa-school-flag"  style="font-size:0.7em;"></i> ECE 311 -<span class="year">  Microelectronics I Lab</span> <span class="place">Spring 2019</span></h3>
                             </div><!--//item-->
@@ -278,12 +279,12 @@
                         <h2 class="heading">Awards</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <h4 class="university" style="font-size:16px">2021</h4>
+                                <h4 class="university" style="font-size:16px;color:rgb(0, 130, 130)">2021</h4>
                                     <li  style="font-size:14px"><i class="fa fa-award"></i>VCEA Outstanding Teaching Assistant within the School of EECS</li>
                                     <li style="font-size:14px"><i class="fa fa-award"></i>Best Graduate Student Teaching Assistant in Computer Science </li>
-                                <h4 class="university" style="font-size:16px">2020</h4>
+                                <h4 class="university" style="font-size:16px;color:rgb(0, 130, 130)">2020</h4>
                                     <li style="font-size:14px"><i class="fa fa-award"></i>Mahmoud M. Dillsi Family Graduate Fellowship </li>
-                                <h4 class="university" style="font-size:16px">2019</h4>
+                                <h4 class="university" style="font-size:16px;color:rgb(0, 130, 130)">2019</h4>
                                     <li style="font-size:14px"><i class="fa fa-award"></i>Alfred Suksdorf Fellowship</li>
                                     <li style="font-size:14px"><i class="fa fa-award"></i>Third Prize in UIdaho 3-Minute Thesis Competition  </li>
                             </ul>

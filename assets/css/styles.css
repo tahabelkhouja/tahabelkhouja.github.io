@@ -27,12 +27,12 @@ a {
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   text-decoration: none;
-  color: rgb(96, 60, 165);
+  color: rgb(54, 152, 182);
 }
 
 a:hover {
   text-decoration: underline;
-  color: rgb(132, 115, 162);
+  color: rgb(0, 159, 207);
 }
 
 a:focus {
@@ -534,13 +534,13 @@ a.dotted-link:hover {
 .education .item .university {
   font-family: "Roboto", sans-serif;
   font-size: 13px;
-  color: #999;
+  color: rgb(52, 50, 50);
   font-weight: 600;
   padding-left: 25px;
 }
 
 .education .item .university .year {
-  color: #b0b7bf;
+  color: #7c7c7d;
   font-weight: 500;
 }
 
