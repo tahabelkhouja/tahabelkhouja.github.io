@@ -852,9 +852,9 @@ body[data-theme="dark"] .text-muted {
   }
 }
 
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
   .container {
     width: 500px;
     max-width: inherit;
   }
-}
+} */
