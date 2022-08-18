@@ -41,7 +41,7 @@
 		                <h2 class="desc">CS Ph.D. Candidate, <a href="https://school.eecs.wsu.edu/" style="font-size:18px;">Washington State Univeristy</a></h2>  
 		                <ul class="social list-inline">
 		                    <li class="list-inline-item"><a href="https://linkedin.com/in/belkhouja-taha-96a3958a" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
-		                    <li class="list-inline-item"><a href="https://github.com/tahabelkhouja" target="_blank" title="GitHub"><i class="fab fa-github-alt"></i></a></li>    
+		                    <li class="list-inline-item"><a href="https://github.com/tahabelkhouja" target="_blank" title="GitHub"><i class="fab fa-github"></i></a></li>    
 		                    <li class="list-inline-item"><a href="https://scholar.google.com/citations?user=JPBgQOoAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fa fa-graduation-cap"></i></a></li>                 
 		                </ul> 
                         
@@ -90,7 +90,7 @@
                                 the reliability and safety of deep learning algorithms for diverse settings and data spaces. My current work includes: 
                                 <ul style="margin-top:-0.75em">
                                     <li>Robust deep learning for the time-series domain with diverse applications including human activity recognition and mobile health.</li>
-                                    <li>Trustworthy machine learning for sequential data  witha  focus on Out-Of-Distribution detection.</li>
+                                    <li>Trustworthy machine learning for sequential data  with a focus on Out-Of-Distribution detection.</li>
                                     <li>Uncertainty quantification for reliable machine-learning using conformal prediction.</li>
                                 </ul>
                             </p>
@@ -127,7 +127,7 @@
                          <div class="content">    
                              <h3 class="heading" style="font-size:18px; color:rgb(0, 130, 130);margin-top:25px"><i class="fas fa-gears"></i> Adversarial Robustness against Time-Series Perturbations</h3>
                              <p>The vulnerability of ML
-                                models against adversarial perturbations is a well-established threat for safety-critical applications. One way to ensure the reliability of
+                                models against adversarial perturbations is a well-established threat to safety-critical applications. One way to ensure the reliability of
                                 deployed ML systems in the real world is to understand these perturbations. But aside from Images and Text, do we know how time-series data (e.g., sensor acquisition, weather data) is affected
                                 by adversarial perturbations?
                             </p>
@@ -137,8 +137,8 @@
                                  <p style="font-size:10px; color:rgb(98, 98, 98)">*Depiction of real-world data affected by noise.</p>
                                  </div>
                                  <div class="desc col-md-8 col-12">
-                                     <p>When the data collected is perturbed, is the commonly used Minkowski metric appropriate to compare the similaity of the signals?
-                                        Time-series natural perturbation such as time-shifts and frequency-distortion affect significantly the ability of the ML model to classify correctly the input. 
+                                     <p>When the data collected is perturbed, is the commonly used Minkowski distance appropriate to compare the similarity of the signals?
+                                        Time-series natural perturbations such as time-shifts and frequency-distortion affect significantly the ability of the ML model to classify correctly the input. 
                                         How can we enhance the robustness of these classifiers using adversarial perturbations?
                                         <br>
                                         <b>Related papers: </b><a href="https://ojs.aaai.org/index.php/AAAI/article/view/20552" target="_blank" >RO-TS (AAAI'22)</a> &amp; 
@@ -152,8 +152,8 @@
                                  <p style="font-size:10px; color:rgb(98, 98, 98)">*Depiction of real-world data affected by sensor rotation.</p>
                                  </div>
                                  <div class="desc col-md-8 col-12">
-                                     <p>Time-series data acquisition is prone to natural perturbation resulting from the hardware orientation or amplified noise.
-                                        Such distortion yields signals that are dissimilar according to Minkowski or elastic metrics. Therefore, how can we enhance the robustness of deep models to recognize correctly the distorted inputs?
+                                     <p><br>Time-series data acquisition is prone to natural perturbations (such as hardware orientation or amplified noise) that affect significantly the data.
+                                        Such distortion yields signals that are dissimilar according to Minkowski or elastic distances. Therefore, how can we enhance the robustness of deep models to recognize correctly the distorted inputs?
                                         <br>
                                         <b>Related papers: </b> <a href="https://www.jair.org/index.php/jair/article/view/13543" target="_blank" >TSA-STAT (JAIR'22)</a> &amp; 
                                         <a href="#" target="_blank">StatOpt (ICCAD'22)</a> 
@@ -169,10 +169,11 @@
                                     <img class="img-fluid project-image" src="assets/images/projects/IdOod.jpg"  />
                                 </div>
                                 <div class="desc col-md-8 col-12">
-                                    <p>While deep models are successful in
+                                    <p>While deep-learning models are successful in
                                         reaching high accuracy for many challenging tasks, they remain unpredictable on
                                         unseen examples. In many cases where the input originates from unusual events or tail
-                                        risks, they can make highly-confident predictions that are completely incorrect.
+                                        risks, they can make highly-confident predictions that are completely incorrect. OOD detection improves the predictive uncertainty of deep-learning models that is essential
+                                        for real-world contexts with low tolerance for error.
                                         <br>
                                         <b>Related papers: </b> <a href="https://arxiv.org/abs/2207.04306" target="_blank" >SR Score</a>
                                     </p>
@@ -188,8 +189,8 @@
                                     <img class="img-fluid project-image" src="assets/images/projects/CI.png"  />
                                 </div>
                                 <div class="desc col-md-8 col-12">
-                                    <p>Safe deployment of deep neural networks in high-stake real-world applications require 
-                                        theoretically sound uncertainty quantification. We study Conformal Prediction for
+                                    <p><br>Safe deployment of deep neural networks in high-stake real-world applications require 
+                                        theoretically-sound uncertainty quantification. We study Conformal Prediction for
                                         uncertainty quantification of deep models to obtain prediction sets for 
                                         classification/regression where the correct prediction is contained with high probability. 
                                     </p>
