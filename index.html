@@ -89,9 +89,9 @@
                                 My current research focuses on developing efficient learning and optimization algorithms to improve 
                                 the reliability and safety of deep learning algorithms for diverse settings and data spaces. My current work includes: 
                                 <ul style="margin-top:-0.75em">
-                                    <li>Robust deep learning for the time-series domain with diverse applications including human activity recognition and mobile health.</li>
-                                    <li>Trustworthy machine learning for sequential data  with a focus on Out-Of-Distribution detection.</li>
-                                    <li>Uncertainty quantification for reliable machine-learning using conformal prediction.</li>
+                                    <li>Security of machine learning systems with a focus on time-series applications such as mobile health, smart home, smart grid, and smart agriculture.</li>
+                                    <li>Robust and trustworthy machine learning</li>
+                                    <li>Theoretically-sound uncertainty quantification of machine learning models</li> 
                                 </ul>
                             </p>
                         </div><!--//content-->
@@ -123,13 +123,13 @@
             <div class="secodary-full col-md-12 col-xxl-12"><!--//Projects-->
                 <section id="projects" class="latest section">
                      <div class="section-inner shadow-sm rounded">
-                         <h2 class="heading">Research Projects</h2>
+                         <h2 class="heading">Current Research Projects</h2>
                          <div class="content">    
                              <h3 class="heading" style="font-size:18px; color:rgb(0, 130, 130);margin-top:25px"><i class="fas fa-gears"></i> Adversarial Robustness against Time-Series Perturbations</h3>
-                             <p>The vulnerability of ML
-                                models against adversarial perturbations is a well-established threat to safety-critical applications. One way to ensure the reliability of
-                                deployed ML systems in the real world is to understand these perturbations. But aside from Images and Text, do we know how time-series data (e.g., sensor acquisition, weather data) is affected
-                                by adversarial perturbations?
+                             <p> There is significant growth in the Internet of Things (IoT), mobile applications and data analytics which
+                                are based on predictive models over time-series data collected from various sources. Some important applications include smart home automation, mobile health,
+                                smart grid management, and finance. Safe and reliable deployment of such machine learning (ML) systems require the ability to be robust to
+                                adversarial/natural perturbations to time-series data.
                             </p>
                              <div class="item row">
                                  <div class="col-md-4 col-12">
@@ -137,12 +137,14 @@
                                  <p style="font-size:10px; color:rgb(98, 98, 98)">*Depiction of real-world data affected by noise.</p>
                                  </div>
                                  <div class="desc col-md-8 col-12">
-                                     <p>When the data collected is perturbed, is the commonly used Minkowski distance appropriate to compare the similarity of the signals?
-                                        Time-series natural perturbations such as time-shifts and frequency-distortion affect significantly the ability of the ML model to classify correctly the input. 
-                                        How can we enhance the robustness of these classifiers using adversarial perturbations?
+                                     <p>When the data collected is distorted, is the commonly used Minkowski distance appropriate to compare the similarity of the signals?
+                                        Time-series perturbations such as time-shifts and frequency-distortion affect significantly the ability of the ML model to classify correctly the input. 
+                                        How can we enhance the robustness of these classifiers using adversarial perturbations and appropriate similarity measures between
+                                        time-series instances?
                                         <br>
-                                        <b>Related papers: </b><a href="https://ojs.aaai.org/index.php/AAAI/article/view/20552" target="_blank" >RO-TS (AAAI'22)</a> &amp; 
-                                                                <a href="https://arxiv.org/abs/2207.04308" target="_blank" >DTW-AR</a> 
+                                        <b>Related papers: </b>
+                                                    <a href="https://www.jair.org/index.php/jair/article/view/13543" target="_blank" >TSA-STAT (JAIR'22)</a> &amp; 
+                                                    <a href="https://arxiv.org/abs/2207.04308" target="_blank" >DTW-AR</a> 
                                      </p>
                                  </div>                       
                              </div><!--//item-->
@@ -152,11 +154,13 @@
                                  <p style="font-size:10px; color:rgb(98, 98, 98)">*Depiction of real-world data affected by sensor rotation.</p>
                                  </div>
                                  <div class="desc col-md-8 col-12">
-                                     <p><br>Time-series data acquisition is prone to natural perturbations (such as hardware orientation or amplified noise) that affect significantly the data.
-                                        Such distortion yields signals that are dissimilar according to Minkowski or elastic distances. Therefore, how can we enhance the robustness of deep models to recognize correctly the distorted inputs?
+                                     <p>Time-series data acquisition is prone to natural perturbations (such as hardware orientation or amplified noise) that affect significantly the data.
+                                        Such distortion yields signals that are dissimilar according to Minkowski distances. On the other hand, elastic measures are very expensive to compute. Therefore, how can we enhance the robustness of deep models during training 
+                                        to recognize correctly the distorted inputs?
                                         <br>
-                                        <b>Related papers: </b> <a href="https://www.jair.org/index.php/jair/article/view/13543" target="_blank" >TSA-STAT (JAIR'22)</a> &amp; 
-                                        <a href="#" target="_blank">StatOpt (ICCAD'22)</a> 
+                                        <b>Related papers: </b> 
+                                            <a href="https://ojs.aaai.org/index.php/AAAI/article/view/20552" target="_blank" >RO-TS (AAAI'22)</a> &amp; 
+                                            <a href="#" target="_blank">StatOpt (ICCAD'22)</a> 
                                      </p>
                                  </div>                       
                              </div><!--//item-->
@@ -197,8 +201,37 @@
                                 </div>
                             </div>
                         </div>
-                     </div><!--//section-inner-->                
-                 </section><!--//Projects-->
+                     </div><!--//section-inner-->   
+
+                 </section><!--//Past Projects--><div class="secodary-full col-md-12 col-xxl-12"><!--//Past Projects-->
+                    <section id="projects" class="latest section">
+                         <div class="section-inner shadow-sm rounded">
+                             <h2 class="heading">Past Research Projects</h2>                          
+                             
+                                <div class="content">    
+                                    <div class="item row">
+                                        <h3 class="heading" style="font-size:18px; color:rgb(0, 130, 130);margin-top:10px"><i class="fas fa-gears"></i> Cybersecurity for Wireless Implantable Medical Devices</h3>
+                                        <div class="col-md-4 col-12">
+                                            <img class="img-fluid project-image" src="assets/images/projects/med.png"  />
+                                        </div>
+                                        <div class="desc col-md-8 col-12">
+                                            <p>Implantable and Wearable Medical Devices (IMDs) are trending technologies in personal healthcare systems. They enable efficient diagnostics and easy
+                                                monitoring of the patient's health status in real-time and provide more efficient and scalable healthcare by avoiding frequent visits to the healthcare
+                                                provider. Information security is a serious challenge to these devices as malicious attacks threaten the health and/or the privacy of patients. 
+                                                On the other hand, IMDs' architectures are characterized by limited resources, such as energy supply, processing power, and memory. 
+                                                Hence, balancing security/confidentiality with the efficiency of these devices is a substantial matter for IMD technologies to progress.
+                                            <br>
+                                            <b>Highlighted papers: </b>
+                                                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167739X18325792" target="_blank">Biometric-based authentication</a> &amp; 
+                                                        <a href="https://ieeexplore.ieee.org/abstract/document/8255015" target="_blank">  IMD Plain-Text Authentication</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div><!--//section-inner-->                
+                </section><!--//Projects-->
+                
  
                  <section class="papers section" id="publications">
                      <div class="section-inner shadow-sm rounded">
