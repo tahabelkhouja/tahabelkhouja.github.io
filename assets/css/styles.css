@@ -148,6 +148,13 @@ a.dotted-link:hover {
   margin-bottom: 5px;
 }
 
+.header .profile-content .note {
+  color: #650339;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
 .header .profile-content .social a {
   background: #2f4359;
   width: 36px;
